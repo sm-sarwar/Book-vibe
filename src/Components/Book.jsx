@@ -1,14 +1,14 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Book = ({ book }) => {
-  const { bookName, author, image, totalPages, rating, category, publisher } =
-    book;
+  const { bookName, author, image, category, bookId} =book;
   return (
     <div>
       <div className="card p-5 shadow-sm hover:shadow-lg bg-base-100">
         <div className="p-10 bg-base-300 rounded-lg ">
-            <figure className="h-[200px] rounded-lg">
-          <img className=""
+            <figure className=" rounded-lg">
+          <img className="W-80 h-60"
             src={image}
             alt={bookName}
           />
@@ -23,8 +23,9 @@ const Book = ({ book }) => {
             {author}
           </p>
           <div className="card-actions justify-end">
-            <div className="badge badge-outline">Fashion</div>
-            <div className="badge badge-outline">Products</div>
+            <Link to={`/books/${bookId}`} className="btn btn-soft btn-accent bg-[#50B1C9] text-white">
+              Show Details
+            </Link>
           </div>
         </div>
       </div>

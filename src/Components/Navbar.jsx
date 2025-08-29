@@ -45,8 +45,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end space-x-3">
-          <a className="py-3 px-5 text-white font-semibold rounded bg-[#23BE0A]">Sign In</a>
-          <a className="py-3 px-5 text-white font-semibold rounded bg-[#59C6D2]">Sign Up</a>
+          <a className="md:py-3 py-2 md:px-5 px-3 text-sm text-white md:font-semibold font-normal rounded bg-[#23BE0A]">Sign In</a>
+          <a className="md:py-3 py-2 md:px-5 px-3 text-sm text-white md:font-semibold font-normal rounded bg-[#59C6D2]">Sign Up</a>
         </div>
       </div>
     </div>
